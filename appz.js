@@ -20,7 +20,7 @@ document.getElementById("order").innerHTML =
     parseInt("3.0") + " !" ;
 
 const hour = new Date().getHours() ;
-let greeting;
+let greeting ;
 
 if (hour < 17) {
     greeting = "Howdy" ;
@@ -28,4 +28,41 @@ if (hour < 17) {
     greeting = "Evenin'" ;
 }
 
-document.getElementById("hour").innerHTML = "Oh, " + greeting + "!" ;
+document.getElementById("hour").innerHTML = "Oh, " + greeting + " Stranger!" ;
+
+let day ;
+const light = new Date().getHours() ;
+let set ;
+
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday" ;
+        break ;
+    case 1:
+        day = "Monday" ;
+        break ;
+    case 2:
+        day = "Tuesday" ;
+        break ;
+    case 3:
+        day = "Wednesday" ;
+        break ;
+    case 4:
+        day = "Thursday"
+        break ;
+    case 5:
+        day = "Friday"
+        break ;
+    case 6:
+        day = "Satuday"
+        break ;
+}
+
+if (light < 17) {
+    set = "day" ;
+} else {
+    set = "night" ;
+}
+
+document.getElementById("comp").innerHTML =
+"Nice " + set + " for a " + day + " , eh?" ;
