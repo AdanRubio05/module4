@@ -22,7 +22,7 @@ document.getElementById("order").innerHTML =
 const hour = new Date().getHours() ;
 let greeting;
 
-if (hour < 18) {
+if (hour < 16) {
     greeting = "Howdy" ;
 } else {
     greeting = "Evenin'" ;
