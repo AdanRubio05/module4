@@ -1,5 +1,6 @@
 let firstName = 'Adan' ;
 let lastName = 'Rubio' ;
 
-document.getElementById("string").innerHTML = 
-"This page was created by " + firstName + " " + lastName + "." ;
+let fullName = firstName + " " + lastName ;
+
+document.getElementById("string").innerHTML = "I, " + fullName + " created this sentence in JS."
