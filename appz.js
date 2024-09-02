@@ -18,3 +18,14 @@ document.getElementById("order").innerHTML =
     parseInt("1") + ", " +
     parseInt("2.0467") + ", " +
     parseInt("3.0") + " !" ;
+
+const hour = new Date().getHours() ;
+let greeting;
+
+if (hour < 18) {
+    greeting = "Howdy" ;
+} else {
+    greeting = "Evenin'" ;
+}
+
+document.getElementById("hour").innerHTML = "Oh, " + greeting + "!" ;
